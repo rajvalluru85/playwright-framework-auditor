@@ -1,6 +1,6 @@
 {
   "name": "playwright-framework-auditor",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Scans an existing Playwright test suite and scores it against production-grade guardrails: type safety, locator strategy, architecture, resilience, and CI/reporting.",
   "bin": {
     "playwright-framework-auditor": "bin/cli.js"
