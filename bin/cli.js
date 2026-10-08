@@ -2,6 +2,7 @@
 
 const { Command } = require('commander');
 const fs = require('fs');
+const path = require('path');
 const chalk = require('chalk');
 const { scanRepo } = require('../src/scanner');
 const { evaluate } = require('../src/scoring');
@@ -12,7 +13,7 @@ const program = new Command();
 program
   .name('playwright-framework-auditor')
   .description('Scans a Playwright test suite and scores it against production-grade guardrails.')
-  .version('0.1.0')
+  .version(require('../package.json').version)
   .argument('[path]', 'Path to the repo to scan', '.')
   .option('--full', 'Show the full report (file/line refs + prioritized fix order)')
   .option('--json <file>', 'Write the raw result as JSON to a file')
