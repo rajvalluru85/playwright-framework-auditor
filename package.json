@@ -1,0 +1,38 @@
+{
+  "name": "playwright-framework-auditor",
+  "version": "0.1.0",
+  "description": "Scans an existing Playwright test suite and scores it against production-grade guardrails: type safety, locator strategy, architecture, resilience, and CI/reporting.",
+  "bin": {
+    "playwright-framework-auditor": "bin/cli.js"
+  },
+  "main": "src/index.js",
+  "type": "commonjs",
+  "files": [
+    "bin",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=16"
+  },
+  "scripts": {
+    "test": "node bin/cli.js ./test-fixtures/sample-repo"
+  },
+  "keywords": [
+    "playwright",
+    "testing",
+    "qa",
+    "automation",
+    "audit",
+    "framework",
+    "cli"
+  ],
+  "author": "Rajesh Valluru",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^11.1.0",
+    "glob": "^10.3.10"
+  }
+}

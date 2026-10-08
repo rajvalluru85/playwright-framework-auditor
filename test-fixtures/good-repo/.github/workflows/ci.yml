@@ -1,0 +1,6 @@
+name: CI
+on: [pull_request]
+jobs:
+  test:
+    steps:
+      - run: npx playwright test
