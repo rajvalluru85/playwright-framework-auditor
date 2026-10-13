@@ -56,7 +56,6 @@ function printFreeTier(result) {
   console.log(
     chalk.cyan.bold('  Run with --full to see exact file/line references and a prioritized fix order.')
   );
-  console.log(chalk.gray('  (Full report: one-time unlock — see README for details)'));
   console.log('');
 }
 
